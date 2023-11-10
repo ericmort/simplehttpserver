@@ -2,7 +2,7 @@ apiVersion: acmeplatform.com/v1alpha1
 kind: AppClaim
 metadata:
   name: platform-demo 
-  namespace: echoserver
+  namespace: simplehttpserver
   labels:
     app-owner: piotrzan
 spec:
@@ -11,7 +11,7 @@ spec:
     matchLabels:
       type: frontend
   parameters:
-    namespace: echoserver
+    namespace: simplehttpserver
     image: 616652803683.dkr.ecr.eu-north-1.amazonaws.com/controlplane/simplehttpserver:v0.1
     host: acme-platform2.127.0.0.1.nip.io
     port: 8000
