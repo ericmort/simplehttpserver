@@ -1,12 +1,12 @@
 apiVersion: acmeplatform.com/v1alpha1
 kind: AppClaim
 metadata:
-  name: platform-demo 
+  name: simplehttpserver 
   namespace: simplehttpserver
   labels:
     app-owner: piotrzan
 spec:
-  id: acme-platform2
+  id: simplehttpserver
   compositionSelector:
     matchLabels:
       type: frontend
